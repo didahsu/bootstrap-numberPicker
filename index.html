@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/numberpicker.css" />
+	</head>
+	<body>
+		
+		<div id="container" class='container-fluid'>
+			<div class='row-fluid show-grid'>
+				<label class="control-label" for="otEndDate">®É¶¡</label>
+				<input type='text' class='center inline input-mini numberPicker'id='hour' name='hour' value="16" >
+				:
+				<input type='text' class='center inline input-mini numberPicker'id='min' name='min' value="30" >
+			</div>
+		<div>
+	</body>
+	<script src='jquery.js'></script>
+	
+	<script src='jquery.mousewheel.min.js'></script>
+	<script src='mwheelIntent.js'></script>
+	<script src='jquery.jscrollpane.min.js'></script>
+	<script src='bootstrap-numberpicker.js'></script>
+	
+
+	<script>
+		$('document').ready(function(){
+			$('#hour').numberPicker({
+			  min: 0,
+			  max: 23,
+			  numberIncrease: 5,
+			  maxCloumn: 1
+      }).on('changeNumber',
+                function(){ alert("Hour has been changed!!")}
+      ).on('change',
+                function(e){
+                  e.preventDefault();
+                  $(this).numberPicker("setValue",$(this).val());
+                }
+      );
+			$('#min').numberPicker({
+			  min: 0,
+			  max: 59,
+			  numberIncrease: 5,
+			  maxCloumn: 1
+			});
+		})
+	</script>
+	</html>

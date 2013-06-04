@@ -1,0 +1,16 @@
+#empRanks tbody tr td{
+	 background-color:#ADD8E6;
+	}
+	#empRanks tbody tr td:nth-child(1){
+	 background-color:white;
+	}
+	#empRanks tbody tr td.holiday{
+	 background-color:#B22222;
+	}
+	#empRanks tbody tr td:nth-child(2).holiday{
+	 background-color:#A9A9A9;
+	}
+	#empRanks tbody tr td:nth-child(2){
+	 background-color:#A9A9A9;
+	 
+	}

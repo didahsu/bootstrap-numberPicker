@@ -1,0 +1,18 @@
+#numberPicker{
+		width: 100%;
+		max-height: 210px;
+		overflow: auto;
+		font-size:14px;
+	}
+#numberPicker td{
+		border-radius:5px;
+		cursor:pointer;
+	}
+#numberPicker td:hover{
+		background-color:#ccc;
+		color:#fff;
+	} 
+#numberPicker td.selected{
+		background-color:#0033FF;
+		color:#fff;
+}
